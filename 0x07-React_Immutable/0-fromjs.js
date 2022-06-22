@@ -1,5 +1,9 @@
 import { fromJS } from "immutable";
 
-const getImmutableObject = (object) => fromJS(object);
+//converts plain JS objects and arrays to Immutable Maps and Lists
+function getImmutableObject(object) {
+  const newObject = fromJS(object);
+  return newObject;
+}
 
 export default getImmutableObject;
