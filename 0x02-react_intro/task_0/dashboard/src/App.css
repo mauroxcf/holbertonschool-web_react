@@ -1,19 +1,39 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .App-header {
   border-bottom: 4px solid red;
   color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .App-body {
   margin-top: 64px;
   margin-left: 32px;
   margin-right: 32px;
+  text-align: left;
+  font-weight: 500;
+  font-size: large;
+}
 
+.App-logo {
+  max-width: 200px;
 }
 
 .App-footer {
   border-top: 4px solid red;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: large;
 }
