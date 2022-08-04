@@ -19,12 +19,41 @@
   margin-left: 32px;
   margin-right: 32px;
   text-align: left;
-  font-weight: 500;
+  font-weight: 600;
   font-size: large;
 }
 
+.App-body form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input {
+  border-color: #e6e6e6;
+  border-width: 2px;
+  border-style: solid;
+}
+
+button[type="submit"] {
+  background-color: white;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  font-size: small;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .App-logo {
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .App-footer {
@@ -34,6 +63,6 @@
   width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: large;
 }

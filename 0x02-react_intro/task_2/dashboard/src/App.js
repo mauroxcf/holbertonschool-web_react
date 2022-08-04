@@ -13,10 +13,10 @@ function App() {
         <p>Login to access the full dashboard</p>
         <form>
           <label>
-            email: <input type="text" name="email" />
+            Email: <input type="text" name="email" />
           </label>
           <label>
-            password: <input type="text" name="password" />
+            Password: <input type="text" name="password" />
           </label>
           <button type="submit" value="submit">
             OK
