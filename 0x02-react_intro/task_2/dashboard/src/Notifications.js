@@ -19,7 +19,7 @@ function Notifications() {
         style={styleButton}
         onClick={() => console.log("Close button has been clicked")}
       >
-        <img alt="close" src={closeIcon} />
+        <img alt="close" src={closeIcon} width="32px" />
       </button>
       <p>Here is the list of notifications</p>
       <ul>
