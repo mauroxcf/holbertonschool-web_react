@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dashboard/static/css/main.dbc9564e.css",
-    "main.js": "/dashboard/static/js/main.6c7c50c5.js",
-    "static/media/logo.jpg": "/dashboard/static/media/logo.24bab5d633e36ca8d17e.jpg",
-    "index.html": "/dashboard/index.html",
-    "main.dbc9564e.css.map": "/dashboard/static/css/main.dbc9564e.css.map",
-    "main.6c7c50c5.js.map": "/dashboard/static/js/main.6c7c50c5.js.map"
+    "main.css": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/css/main.dbc9564e.css",
+    "main.js": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/main.6539849b.js",
+    "static/media/logo.jpg": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/media/logo.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/index.html",
+    "main.dbc9564e.css.map": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/css/main.dbc9564e.css.map",
+    "main.6539849b.js.map": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/main.6539849b.js.map"
   },
   "entrypoints": [
     "static/css/main.dbc9564e.css",
-    "static/js/main.6c7c50c5.js"
+    "static/js/main.6539849b.js"
   ]
 }
