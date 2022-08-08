@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.App-header {
+  border-bottom: 4px solid red;
+  color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App-body {
+  margin-top: 64px;
+  margin-left: 32px;
+  margin-right: 32px;
+  text-align: left;
+  font-weight: 600;
+  font-size: large;
+}
+
+.App-body form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input {
+  border-color: #e6e6e6;
+  border-width: 2px;
+  border-style: solid;
+}
+
+button[type="submit"] {
+  background-color: white;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  font-size: small;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.App-logo {
+  max-width: 300px;
+}
+
+.App-footer {
+  border-top: 4px solid red;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 600;
+  font-size: large;
+}
