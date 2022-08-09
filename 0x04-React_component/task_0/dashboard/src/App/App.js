@@ -6,9 +6,9 @@ import Notifications from "../Notifications/Notifications";
 import PropTypes from "prop-types";
 import CourseList from "../CourseList/CourseList";
 import { getLatestNotification } from "../utils";
-import React, { Component } from "react";
+import React from "react";
 
-export default class App extends Component {
+export default class App extends React.Component {
   render() {
     const listCourses = [
       { id: 1, name: "ES6", credit: 60 },
