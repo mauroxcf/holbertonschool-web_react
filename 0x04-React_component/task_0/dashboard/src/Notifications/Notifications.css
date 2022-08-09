@@ -1,0 +1,27 @@
+.menuItem {
+	text-align: right;
+}
+
+.Notifications {
+    position: relative;
+    float: right;
+    padding: 8px;
+    border: 2px dashed red;
+}
+
+.Notifications p {
+    font-weight: 600;
+    font-size: larger;
+}
+
+.Notifications li {
+    font-size: larger;
+}
+
+[data-notification-type="default"] {
+    color: blue;
+}
+
+[data-notification-type="urgent"] {
+    color: red;
+}
