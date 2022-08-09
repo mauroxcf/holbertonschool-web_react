@@ -2,6 +2,7 @@ import React from "react";
 import "./Notifications.css";
 import closeIcon from "../close-icon.png";
 import NotificationItem from "./NotificationItem";
+import { getLatestNotification } from "../utils";
 
 function Notifications() {
   const styleButton = {
@@ -22,7 +23,14 @@ function Notifications() {
         <img alt="close" src={closeIcon} width="32px" />
       </button>
       <p>Here is the list of notifications</p>
-      <NotificationItem />
+      <ul>
+        <NotificationItem type="default" value="New course available" />
+        <NotificationItem type="urgent" value="New resume available" />
+        <NotificationItem
+          type="urgent"
+          html={{ __html: getLatestNotification() }}
+        />
+      </ul>
     </div>
   );
 }

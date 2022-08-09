@@ -13,10 +13,10 @@
     font-size: larger;
 }
 
-[data="default"] {
+[data-notification-type="default"] {
     color: blue;
 }
 
-[data="urgent"] {
+[data-notification-type="urgent"] {
     color: red;
 }
