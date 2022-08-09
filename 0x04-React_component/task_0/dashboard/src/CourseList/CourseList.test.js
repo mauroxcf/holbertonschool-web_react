@@ -6,6 +6,7 @@ describe("<CourseList />", () => {
   let listCourses;
   it("CourseList renders without crashing", () => {
     const wrapper = shallow(<CourseList />);
+    expect(wrapper).toMatchSnapshot();
   });
 
   describe("CourseList with list of courses", () => {

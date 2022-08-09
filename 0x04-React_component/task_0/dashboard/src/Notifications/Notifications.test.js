@@ -1,11 +1,16 @@
 import { shallow } from "enzyme";
 import React from "react";
 import Notifications from "./Notifications";
-import { getLatestNotification } from "../utils/utils";
+import { getLatestNotification } from "../utils";
 
 describe("<Notifications />", () => {
   let listNotifications;
   let latestNotification;
+
+  it("Notifications renders without crashing", () => {
+    const wrapper = shallow(<Notifications />);
+    expect(wrapper).toMatchSnapshot();
+  });
 
   it("menu item is being displayed when displayDrawer is false", () => {
     const wrapper = shallow(<Notifications />);

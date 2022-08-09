@@ -1,19 +1,20 @@
 import { shallow } from "enzyme";
-import Enzyme from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import React from "react";
 import Header from "./Header";
-import logo from "../logo.jpg";
-
-Enzyme.configure({ adapter: new Adapter() });
 
 describe("<Header />", () => {
-  it("Render Header Component", () => {
-    let wrapper = shallow(<Header />);
-    expect(wrapper.find("Header").exists()).toEqual(false);
-  });
-  it("Verify component renders img", () => {
+  it("Header renders without crashing", () => {
     const wrapper = shallow(<Header />);
-    expect(wrapper.find("img").prop("src")).toEqual(logo);
+    expect(wrapper).toMatchSnapshot();
+  });
+  it("Verify that the components render img", () => {
+    const wrapper = shallow(<Header />);
+    wrapper.update();
+    expect(wrapper.find("img")).toHaveLength(1);
+  });
+  it("Verify that the components render h1", () => {
+    const wrapper = shallow(<Header />);
+    wrapper.update();
+    expect(wrapper.find("h1")).toHaveLength(1);
   });
 });
