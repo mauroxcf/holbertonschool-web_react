@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 export default class BodySection extends Component {
-  constructor(props) {
-    super(props);
-    this.props();
-  }
   render() {
     const { title, children } = this.props;
     return (
