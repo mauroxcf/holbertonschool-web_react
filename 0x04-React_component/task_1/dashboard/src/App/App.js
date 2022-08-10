@@ -32,20 +32,20 @@ export default class App extends React.Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
-  handleKeyPress(e) {
-    if (e.key === "h" && e.ctrlKey) {
-      alert("Logging you out");
-      this.props.LogOut();
-      e.preventDefault();
-    }
-  }
-
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyPress);
   }
 
   componentWillUnmount() {
     window.removeEventListener("keydown", this.handleKeyPress);
+  }
+
+  handleKeyPress(e) {
+    if (e.key === "h" && e.ctrlKey) {
+      alert("Logging you out");
+      this.props.LogOut();
+      e.preventDefault();
+    }
   }
 
   render() {
@@ -65,6 +65,7 @@ export default class App extends React.Component {
 
 App.propTypes = {
   isLoggedIn: PropTypes.bool,
+  logOut: PropTypes.func,
 };
 
 App.defaultProps = {
