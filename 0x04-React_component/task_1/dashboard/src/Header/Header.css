@@ -1,0 +1,11 @@
+.App-header {
+    border-bottom: 4px solid red;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .App-logo {
+    max-width: 300px;
+  }
